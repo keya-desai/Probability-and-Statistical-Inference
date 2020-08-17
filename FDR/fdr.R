@@ -36,7 +36,7 @@ fdr <- function(p_values, Q){
   lines(hypothesis, hypothesis_1, type="l", col="black")
   
   # list index of hypothesis which are interesting in the original unsorted list of p values
-  temp = (p_values < p.star)
+  temp = (p_values < p_star)
   fd = which(temp == "TRUE")
   print("Index of intersting p values in the unsorted list:")
   print(fd)
